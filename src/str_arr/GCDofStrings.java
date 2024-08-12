@@ -1,5 +1,7 @@
 package str_arr;
 
+
+
 public class GCDofStrings {
 
     public String gcdOfStrings(String str1, String str2) {
@@ -19,6 +21,7 @@ public class GCDofStrings {
 
     //Approach 2: GCD of Strings (Optimized), mathematical
     // approach using Euclidean algorithm and also very sophisticated
+
     public String gcdOfStringsII(String str1, String str2) {
         // Check if concatenating str1 and str2 in both orders gives the same result
         if (!(str1 + str2).equals(str2 + str1)) {
@@ -43,14 +46,14 @@ public class GCDofStrings {
 
     public static void main(String[] args) {
         GCDofStrings gcd = new GCDofStrings();
-        System.out.println(gcd.gcdOfStrings("ABCABC", "ABC"));
+        System.out.println(gcd.gcdOfStrings("ABCABC", ""));
         System.out.println(gcd.gcdOfStrings("ABAB", "ABAB"));
         System.out.println(gcd.gcdOfStrings("ABABAB", "ABAB"));
 
         System.out.println(gcd.gcdOfStrings("LEET", "CODE"));
 
 
-        System.out.println(gcd.gcdOfStringsII("ABCABC", "ABC"));
+        System.out.println(gcd.gcdOfStringsII("ABCABC", ""));
         System.out.println(gcd.gcdOfStringsII("ABAB", "ABAB"));
         System.out.println(gcd.gcdOfStringsII("LEET", "CODE"));
         System.out.println(gcd.gcdOfStringsII("ABABAB", "ABAB"));
