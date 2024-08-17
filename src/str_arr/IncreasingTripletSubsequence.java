@@ -58,7 +58,7 @@ public class IncreasingTripletSubsequence {
                 {1, 2, 1, 2, 1, 2},  // False: Not enough distinct elements
                 {1, 2, 3},  // True: (1, 2, 3) directly
                 {3, 1, 4, 2},  // True: (1, 4, 2) but only looking for (1, 2, 4)
-                {3, 2, 1, 5, 4, 2},  // True: (1, 2, 5)
+                {3, 2, 1, 5, 4, 2},  // False:
 
                 // Large input
                 {1, 5, 2, 3, 6, 7, 8, 10, 11, 12, 13},  // True: (1, 2, 3) or (2, 3, 6) or (3, 6, 7) etc.
@@ -74,7 +74,7 @@ public class IncreasingTripletSubsequence {
                 true,  // {1, 2, 3}
                 false, // {3, 1, 4, 2}
                 true,  // {3, 2, 1, 5, 4, 2}
-                true,  // {1, 5, 2, 3, 6, 7, 8, 10, 11, 12, 13}
+                false,  // {1, 5, 2, 3, 6, 7, 8, 10, 11, 12, 13}
                 false  // {Integer.MAX_VALUE, Integer.MAX_VALUE - 1, Integer.MAX_VALUE - 2}
         };
 
